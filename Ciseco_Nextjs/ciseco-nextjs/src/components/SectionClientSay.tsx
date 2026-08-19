@@ -52,7 +52,7 @@ const SectionClientSay: FC<SectionClientSayProps> = ({
     loop: true,
   },
   heading = 'Good news from far away 🥇',
-  subHeading = "Let's see what people think of Ciseco",
+  subHeading = "Let's see what people think of Jee code",
 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions, [Autoplay({ playOnInit: true, delay: 2000 })])
   const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = useCarouselArrowButtons(emblaApi)

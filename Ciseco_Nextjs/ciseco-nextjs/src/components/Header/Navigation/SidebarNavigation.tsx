@@ -112,7 +112,7 @@ const SidebarNavigation: React.FC<SidebarNavigationProps> = ({ data }) => {
 
       {/* FOR OUR DEMO */}
       <ButtonPrimary
-        href="https://themeforest.net/item/ciseco-shop-ecommerce-nextjs-template/44210635"
+        href="https://themeforest.net/item/Jee code-shop-ecommerce-nextjs-template/44210635"
         target="_blank"
         rel="noopener noreferrer"
         className="px-8!"

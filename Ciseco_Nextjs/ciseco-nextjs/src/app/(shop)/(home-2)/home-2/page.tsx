@@ -18,8 +18,8 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Home 2',
   description:
-    'Ciseco is a modern and elegant template for Next.js, Tailwind CSS, and TypeScript. It is designed to be simple and easy to use, with a focus on performance and accessibility.',
-  keywords: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Ciseco', 'Headless UI', 'Fashion', 'E-commerce'],
+    'Jee code is a modern and elegant template for Next.js, Tailwind CSS, and TypeScript. It is designed to be simple and easy to use, with a focus on performance and accessibility.',
+  keywords: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Jee code', 'Headless UI', 'Fashion', 'E-commerce'],
 }
 
 async function PageHome2() {
@@ -55,7 +55,7 @@ async function PageHome2() {
         <SectionGridFeatureItems data={products} />
         <Divider />
         <div>
-          <Heading headingDim="From the Ciseco blog">The latest news</Heading>
+          <Heading headingDim="From the Jee code blog">The latest news</Heading>
           <SectionMagazine5 posts={blogPosts} />
           <div className="mt-20 flex justify-center">
             <ButtonSecondary href="/blog">Show all blog articles</ButtonSecondary>

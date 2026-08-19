@@ -22,7 +22,7 @@ const Layout: FC<Props> = ({ children }) => {
               <h2 className="text-3xl font-semibold xl:text-4xl">Account</h2>
               <span className="mt-4 block text-base text-neutral-500 sm:text-lg dark:text-neutral-400">
                 <span className="font-semibold text-neutral-900 dark:text-neutral-200">Enrico Cole,</span>{' '}
-                ciseco@gmail.com · Los Angeles, CA
+                Jee code@gmail.com · Los Angeles, CA
               </span>
             </div>
 
