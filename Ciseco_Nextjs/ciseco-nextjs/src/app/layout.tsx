@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import GlobalClient from './GlobalClient'
 
+import SmoothScroll from '@/components/SmoothScroll'
+
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
@@ -24,13 +26,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={poppins.className}>
       <body className="bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200">
-        <Aside.Provider>
-          {children}
+        <SmoothScroll>
+          <Aside.Provider>
+            {children}
 
-          {/* Client component: Toaster, ... */}
-          <GlobalClient />
+            {/* Client component: Toaster, ... */}
+            <GlobalClient />
 
-        </Aside.Provider>
+          </Aside.Provider>
+        </SmoothScroll>
       </body>
     </html>
   )

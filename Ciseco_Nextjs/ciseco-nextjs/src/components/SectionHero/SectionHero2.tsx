@@ -131,7 +131,7 @@ const SectionHero2: FC<Props> = ({ className = '' }) => {
         key={index}
       >
         {/* BG */}
-        <div className="absolute inset-0 -z-10 bg-[#E3FFE6]">
+        <div className="absolute inset-0 -z-10 bg-[#FFD6E0]">
           <Image
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -180,7 +180,7 @@ const SectionHero2: FC<Props> = ({ className = '' }) => {
         <div className="relative -z-10 flex-1/2 lg:pr-10">
           <Image
             sizes="(max-width: 768px) 100vw, 60vw"
-            className="h-auto w-full max-w-[40rem] object-contain fade--animation__image select-none"
+            className="h-auto w-full max-w-[50rem] object-contain fade--animation__image select-none"
             src={item.imageUrl}
             alt={item.heading}
             width={790}
