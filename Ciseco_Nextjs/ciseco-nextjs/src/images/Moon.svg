@@ -1,7 +1,63 @@
 <svg width="1440" height="600" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Original pebbles -->
 <circle cx="1203.5" cy="107.5" r="12.5" fill="#43B97F"/>
 <circle cx="302.5" cy="516.5" r="10.5" fill="#43B97F"/>
 <circle cx="124.5" cy="484.5" r="10.5" fill="#FF6650"/>
 <circle cx="1351.5" cy="494.5" r="10.5" fill="#FFB951"/>
 <circle cx="674.5" cy="93.5" r="17.5" fill="#C280D2"/>
+
+<!-- Pink tones -->
+<circle cx="950" cy="520" r="13" fill="#FF6B9D" opacity="0.7"/>
+<circle cx="520" cy="470" r="8" fill="#FF6B9D"/>
+<circle cx="1100" cy="380" r="6" fill="#FFB6C1"/>
+<circle cx="70" cy="150" r="9" fill="#FF6B9D" opacity="0.45"/>
+<circle cx="1420" cy="420" r="7" fill="#FFB6C1" opacity="0.6"/>
+<circle cx="340" cy="300" r="5" fill="#FF6B9D" opacity="0.35"/>
+<circle cx="880" cy="60" r="10" fill="#FFB6C1" opacity="0.5"/>
+<circle cx="1030" cy="560" r="4" fill="#FF6B9D" opacity="0.55"/>
+<circle cx="230" cy="430" r="6" fill="#FFB6C1" opacity="0.4"/>
+<circle cx="760" cy="330" r="8" fill="#FF6B9D" opacity="0.3"/>
+
+<!-- Purple/lilac -->
+<circle cx="380" cy="120" r="9" fill="#B794F6"/>
+<circle cx="1280" cy="300" r="15" fill="#D8B4FE" opacity="0.5"/>
+<circle cx="830" cy="550" r="7" fill="#C280D2"/>
+<circle cx="50" cy="280" r="12" fill="#D8B4FE" opacity="0.35"/>
+<circle cx="1150" cy="220" r="6" fill="#B794F6" opacity="0.5"/>
+<circle cx="560" cy="560" r="11" fill="#C280D2" opacity="0.4"/>
+<circle cx="430" cy="40" r="5" fill="#D8B4FE" opacity="0.6"/>
+<circle cx="1380" cy="130" r="8" fill="#B794F6" opacity="0.3"/>
+<circle cx="700" cy="430" r="4" fill="#C280D2" opacity="0.5"/>
+
+<!-- Warm gold/orange -->
+<circle cx="200" cy="200" r="11" fill="#FFB951" opacity="0.6"/>
+<circle cx="1050" cy="150" r="8" fill="#FF6650" opacity="0.5"/>
+<circle cx="750" cy="500" r="6" fill="#FFB951"/>
+<circle cx="100" cy="60" r="7" fill="#FFB951" opacity="0.4"/>
+<circle cx="1300" cy="550" r="9" fill="#FF6650" opacity="0.35"/>
+<circle cx="480" cy="250" r="5" fill="#FFB951" opacity="0.5"/>
+<circle cx="1180" cy="460" r="4" fill="#FFB951" opacity="0.45"/>
+<circle cx="620" cy="180" r="6" fill="#FF6650" opacity="0.3"/>
+
+<!-- Green accents -->
+<circle cx="600" cy="540" r="5" fill="#43B97F" opacity="0.5"/>
+<circle cx="1400" cy="200" r="18" fill="#93C5AB" opacity="0.35"/>
+<circle cx="170" cy="530" r="8" fill="#43B97F" opacity="0.4"/>
+<circle cx="920" cy="280" r="6" fill="#93C5AB" opacity="0.45"/>
+<circle cx="350" cy="380" r="4" fill="#43B97F" opacity="0.35"/>
+<circle cx="1250" cy="80" r="7" fill="#93C5AB" opacity="0.3"/>
+
+<!-- Tiny accent dots scattered everywhere -->
+<circle cx="450" cy="80" r="4" fill="#FF6B9D" opacity="0.4"/>
+<circle cx="1150" cy="480" r="5" fill="#C280D2" opacity="0.6"/>
+<circle cx="160" cy="350" r="7" fill="#FFB6C1" opacity="0.5"/>
+<circle cx="540" cy="150" r="3" fill="#B794F6" opacity="0.5"/>
+<circle cx="1000" cy="90" r="3" fill="#FF6650" opacity="0.4"/>
+<circle cx="280" cy="60" r="3" fill="#43B97F" opacity="0.45"/>
+<circle cx="1320" cy="360" r="3" fill="#FFB951" opacity="0.5"/>
+<circle cx="800" cy="580" r="3" fill="#FF6B9D" opacity="0.35"/>
+<circle cx="90" cy="400" r="3" fill="#D8B4FE" opacity="0.4"/>
+<circle cx="1420" cy="80" r="4" fill="#C280D2" opacity="0.35"/>
+<circle cx="650" cy="280" r="3" fill="#FFB6C1" opacity="0.3"/>
+<circle cx="420" cy="520" r="3" fill="#43B97F" opacity="0.4"/>
 </svg>
