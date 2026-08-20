@@ -257,3 +257,165 @@
   font-size: 10px;
   margin-left: 6px;
 }
+
+/* ===== HERO SECTION REDESIGN ===== */
+
+/* Hero slide crossfade */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heroFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Hero content staggered entrance */
+@keyframes heroSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroSlideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hero image reveal */
+@keyframes heroImageReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.08) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Floating decorative elements */
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg);
+  }
+}
+@keyframes heroFloatReverse {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(15px) rotate(-2deg);
+  }
+}
+
+/* Gradient orb subtle pulse */
+@keyframes heroOrbPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+@keyframes heroOrbPulse2 {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.15);
+  }
+}
+
+/* Scroll indicator bounce */
+@keyframes heroScrollBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(8px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(4px) translateX(-50%);
+  }
+}
+
+/* Progress bar fill */
+@keyframes heroProgressFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Utilities */
+@utility hero-slide-up {
+  animation: heroSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@utility hero-slide-up-delay-1 {
+  animation: heroSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+@utility hero-slide-up-delay-2 {
+  animation: heroSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+@utility hero-slide-up-delay-3 {
+  animation: heroSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
+}
+@utility hero-slide-up-delay-4 {
+  animation: heroSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+@utility hero-slide-in-left {
+  animation: heroSlideInLeft 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+@utility hero-image-reveal {
+  animation: heroImageReveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+@utility hero-float {
+  animation: heroFloat 6s ease-in-out infinite;
+}
+@utility hero-float-reverse {
+  animation: heroFloatReverse 7s ease-in-out infinite;
+}
+@utility hero-orb-pulse {
+  animation: heroOrbPulse 8s ease-in-out infinite;
+}
+@utility hero-orb-pulse-2 {
+  animation: heroOrbPulse2 10s ease-in-out infinite;
+}
+@utility hero-scroll-bounce {
+  animation: heroScrollBounce 2s ease-in-out infinite;
+}
+@utility hero-progress-fill {
+  animation: heroProgressFill 5s linear;
+}
+@utility hero-fade-in {
+  animation: heroFadeIn 0.6s ease-out both;
+}
