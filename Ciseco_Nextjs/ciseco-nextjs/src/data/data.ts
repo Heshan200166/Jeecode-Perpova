@@ -786,7 +786,7 @@ export async function getCollections() {
       handle: 'explore-new-arrivals',
       sortDescription: 'Shop the latest <br /> from top brands',
       description:
-        'Excoolent new arrivals for every occasion, from casual to formal. Explore our collection of trendy jackets that elevate your outfit.',
+        'Discover our latest seasonal drop featuring handpicked designs, premium fabrics, and modern silhouettes.',
       color: 'bg-orange-50',
       count: 77,
       image: {
@@ -802,7 +802,7 @@ export async function getCollections() {
       handle: 'sale-collection',
       sortDescription: 'Up to <br /> 80% off retail',
       description:
-        'Excoolent new arrivals for every occasion, from casual to formal. Explore our collection of trendy jackets that elevate your outfit.',
+        'Unbeatable discounts on high-end fashion pieces. Grab your favorites before they sell out.',
       color: 'bg-green-50',
       count: 85,
       image: {
@@ -818,7 +818,7 @@ export async function getCollections() {
       handle: 'sale-collection-2',
       sortDescription: 'Up to <br /> 90% off retail',
       description:
-        'Excoolent new arrivals for every occasion, from casual to formal. Explore our collection of trendy jackets that elevate your outfit.',
+        'Limited-time clearance deals with massive savings across top fashion categories.',
       color: 'bg-blue-50',
       count: 77,
       image: {
@@ -834,7 +834,7 @@ export async function getCollections() {
       handle: 'digital-gift-cards',
       sortDescription: 'Give the gift <br /> of choice',
       description:
-        'Excoolent new arrivals for every occasion, from casual to formal. Explore our collection of trendy jackets that elevate your outfit.',
+        'The perfect gift for any occasion. Delivered instantly via email with no expiration date.',
       color: 'bg-red-50',
       count: 112,
       image: {
@@ -852,7 +852,7 @@ export async function getCollections() {
       handle: 'sport-kits',
       sortDescription: '20+ categories',
       description:
-        'Excoolent new arrivals for every occasion, from casual to formal. Explore our collection of trendy jackets that elevate your outfit.',
+        'High-performance activewear engineered for maximum mobility and endurance.',
       color: 'bg-neutral-100',
       count: 77,
       image: {
@@ -869,7 +869,7 @@ export async function getCollections() {
       color: 'bg-neutral-100',
       sortDescription: '20+ categories',
       description:
-        'Excoolent new arrivals for every occasion, from casual to formal. Explore our collection of trendy jackets that elevate your outfit.',
+        'Premium skincare and cosmetics crafted with natural ingredients for radiant beauty.',
       count: 77,
       image: {
         src: boothImage2.src,
@@ -884,7 +884,7 @@ export async function getCollections() {
       handle: 'travel-kits',
       sortDescription: '20+ categories',
       description:
-        'Excoolent new arrivals for every occasion, from casual to formal. Explore our collection of trendy jackets that elevate your outfit.',
+        'Durable, stylish travel accessories and bags designed to keep your journey organized.',
       color: 'bg-neutral-100',
       count: 77,
       image: {
@@ -900,7 +900,7 @@ export async function getCollections() {
       handle: 'pets-food',
       sortDescription: '44+ categories',
       description:
-        'Excoolent new arrivals for every occasion, from casual to formal. Explore our collection of trendy jackets that elevate your outfit.',
+        'Wholesome nutrition and organic treats to keep your pets happy and healthy.',
       color: 'bg-neutral-100',
       count: 99,
       image: {
@@ -1185,7 +1185,7 @@ export async function getProducts() {
       ],
       reviewNumber: 95,
       rating: 4.7,
-      status: 'Best Seller',
+      status: 'New in',
       options: [
         {
           name: 'Color',
@@ -1396,7 +1396,7 @@ export async function getProducts() {
       ],
       reviewNumber: 75,
       rating: 4.8,
-      status: 'Limited Edition',
+      status: 'New in',
       options: [
         {
           name: 'Color',

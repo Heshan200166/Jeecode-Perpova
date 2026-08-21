@@ -5,7 +5,7 @@ import NcImage from '@/shared/NcImage/NcImage'
 import { Link } from '@/shared/link'
 import { ArrowsPointingOutIcon, ShoppingBagIcon } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/24/solid'
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import AddToCardButton from './AddToCardButton'
 import LikeButton from './LikeButton'
 import Prices from './Prices'
@@ -21,6 +21,26 @@ interface Props {
 const ProductCard: FC<Props> = ({ className = '', data, isLiked }) => {
   const { title, price, status, rating, options, handle, selectedOptions, reviewNumber, images, featuredImage } = data
   const color = selectedOptions?.find((option) => option.name === 'Color')?.value
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [isHovered, setIsHovered] = useState(false)
+
+  const allImages = images && images.length > 0 ? images : featuredImage ? [featuredImage] : []
+
+  useEffect(() => {
+    let interval: NodeJS.Timeout | null = null
+    if (isHovered && allImages.length > 1) {
+      interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % allImages.length)
+      }, 1100)
+    } else {
+      setCurrentImageIndex(0)
+    }
+
+    return () => {
+      if (interval) clearInterval(interval)
+    }
+  }, [isHovered, allImages.length])
 
   const { open: openAside, setProductQuickViewHandle } = useAside()
 
@@ -50,7 +70,7 @@ const ProductCard: FC<Props> = ({ className = '', data, isLiked }) => {
 
   const renderGroupButtons = () => {
     return (
-      <div className="invisible absolute inset-x-1 bottom-0 flex justify-center gap-1.5 opacity-0 transition-all group-hover:visible group-hover:bottom-4 group-hover:opacity-100">
+      <div className="invisible absolute inset-x-1 bottom-0 flex justify-center gap-1.5 opacity-0 transition-all group-hover:visible group-hover:bottom-4 group-hover:opacity-100 z-20">
         <AddToCardButton
           as={'button'}
           className="flex cursor-pointer items-center justify-center gap-2 rounded-full bg-neutral-900 px-4 py-2 text-xs/normal text-white shadow-lg hover:bg-neutral-800"
@@ -85,19 +105,39 @@ const ProductCard: FC<Props> = ({ className = '', data, isLiked }) => {
       <div className={`product-card relative flex flex-col bg-transparent ${className}`}>
         <Link href={'/products/' + handle} className="absolute inset-0"></Link>
 
-        <div className="group relative z-1 shrink-0 overflow-hidden rounded-3xl bg-neutral-50 dark:bg-neutral-300">
-          <Link href={'/products/' + handle} className="block">
-            {featuredImage?.src && (
+        <div
+          className="group relative z-1 shrink-0 overflow-hidden rounded-3xl bg-neutral-50 dark:bg-neutral-300"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <Link href={'/products/' + handle} className="relative block aspect-w-11 aspect-h-12 w-full h-0 overflow-hidden">
+            {allImages.map((img, idx) => (
               <NcImage
-                containerClassName="flex aspect-w-11 aspect-h-12 w-full h-0"
-                src={featuredImage}
-                className="h-full w-full object-cover"
+                key={idx}
+                containerClassName="absolute inset-0"
+                src={img}
+                className={`h-full w-full object-cover transition-opacity duration-500 ${currentImageIndex === idx ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                  }`}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 40vw"
-                alt={handle}
+                alt={handle || ''}
               />
-            )}
+            ))}
           </Link>
+
+          {/* Dots Indicator on hover */}
+          {isHovered && allImages.length > 1 && (
+            <div className="absolute top-4 left-1/2 z-10 flex -translate-x-1/2 items-center gap-1.5 rounded-full bg-black/20 px-2 py-1 backdrop-blur-md pointer-events-none">
+              {allImages.map((_, idx) => (
+                <div
+                  key={idx}
+                  className={`h-1.5 rounded-full transition-all duration-300 ${currentImageIndex === idx ? 'w-3.5 bg-white' : 'w-1.5 bg-white/50'
+                    }`}
+                />
+              ))}
+            </div>
+          )}
+
           <ProductStatus status={status} />
           <LikeButton liked={isLiked} className="absolute end-3 top-3 z-10" />
           {renderGroupButtons()}

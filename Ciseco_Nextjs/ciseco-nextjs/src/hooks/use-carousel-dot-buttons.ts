@@ -20,11 +20,15 @@ export const useCarouselDotButton = (emblaApi: EmblaCarouselType | undefined): U
   )
 
   const onInit = useCallback((emblaApi: EmblaCarouselType) => {
-    setScrollSnaps(emblaApi.scrollSnapList())
+    requestAnimationFrame(() => {
+      setScrollSnaps(emblaApi.scrollSnapList())
+    })
   }, [])
 
   const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
-    setSelectedIndex(emblaApi.selectedScrollSnap())
+    requestAnimationFrame(() => {
+      setSelectedIndex(emblaApi.selectedScrollSnap())
+    })
   }, [])
 
   useEffect(() => {

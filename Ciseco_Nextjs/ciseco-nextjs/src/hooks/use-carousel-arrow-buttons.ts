@@ -23,8 +23,10 @@ export const useCarouselArrowButtons = (emblaApi: EmblaCarouselType | undefined)
   }, [emblaApi])
 
   const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
-    setPrevBtnDisabled(!emblaApi.canScrollPrev())
-    setNextBtnDisabled(!emblaApi.canScrollNext())
+    requestAnimationFrame(() => {
+      setPrevBtnDisabled(!emblaApi.canScrollPrev())
+      setNextBtnDisabled(!emblaApi.canScrollNext())
+    })
   }, [])
 
   useEffect(() => {
