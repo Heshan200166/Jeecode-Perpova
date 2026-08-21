@@ -37,7 +37,7 @@ const PostCard2: FC<Props> = ({ className, post }) => {
             alt={title}
             src={image}
             containerClassName="absolute inset-0"
-            className="rounded-xl object-cover brightness-100 transition-[filter] group-hover:brightness-90 sm:rounded-3xl"
+            className="rounded-xl object-cover brightness-100 transition-all duration-500 group-hover:scale-105 group-hover:brightness-90 sm:rounded-3xl"
             sizes="400px"
             fill
           />

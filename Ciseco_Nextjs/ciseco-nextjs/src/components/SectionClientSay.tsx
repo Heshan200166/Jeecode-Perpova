@@ -24,17 +24,17 @@ export const DEMO_DATA = [
   {
     id: 1,
     clientName: 'Tiana Abie',
-    content: 'Great quality products, affordable prices, fast and friendly delivery. I very recommend.',
+    content: 'Absolutely love the quality! The fabric feels premium and the fit is perfect. Already ordered two more pieces.',
   },
   {
     id: 2,
     clientName: 'Lennie Swiffan',
-    content: 'Great quality products, affordable prices, fast and friendly delivery. I very recommend.',
+    content: 'Shipping was incredibly fast and the packaging was beautiful. The jacket exceeded my expectations — worth every penny.',
   },
   {
     id: 3,
     clientName: 'Berta Emili',
-    content: 'Great quality products, affordable prices, fast and friendly delivery. I very recommend.',
+    content: 'Finally found an online store with accurate sizing. The customer service team was super helpful when I had questions.',
   },
 ]
 
@@ -134,6 +134,12 @@ const SectionClientSay: FC<SectionClientSayProps> = ({
                 <li key={item.id} className="flex embla__slide basis-full flex-col items-center text-center">
                   <span className="block text-2xl">{item.content}</span>
                   <span className="mt-8 block text-2xl font-semibold">{item.clientName}</span>
+                  <span className="mt-2 inline-flex items-center gap-1 rounded-full bg-green-50 px-3 py-1 text-xs font-medium text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                    <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M16.403 12.652a3 3 0 010-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    Verified Buyer
+                  </span>
                   <div className="mt-3.5 flex items-center space-x-0.5 text-yellow-500">
                     <StarIcon className="h-6 w-6" />
                     <StarIcon className="h-6 w-6" />

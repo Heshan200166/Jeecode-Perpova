@@ -679,7 +679,7 @@ export async function getCollections() {
       handle: 'jackets',
       description: 'Explore our collection of trendy jackets that elevate your outfit.',
       sortDescription: 'Newest arrivals',
-      color: 'bg-indigo-50',
+      color: 'bg-rose-50',
       count: 77,
       image: {
         src: collectionImage1.src,
@@ -700,7 +700,7 @@ export async function getCollections() {
         height: collectionImage2.height,
         alt: 'Explore new arrivals',
       },
-      color: 'bg-indigo-50',
+      color: 'bg-sky-50',
       count: 155,
     },
     {
@@ -715,7 +715,7 @@ export async function getCollections() {
         height: collectionImage3.height,
         alt: 'Explore new arrivals',
       },
-      color: 'bg-indigo-50',
+      color: 'bg-amber-50',
       count: 35,
     },
     {
@@ -730,7 +730,7 @@ export async function getCollections() {
         height: collectionImage4.height,
         alt: 'Explore new arrivals',
       },
-      color: 'bg-indigo-50',
+      color: 'bg-emerald-50',
       count: 87,
     },
     {
@@ -745,7 +745,7 @@ export async function getCollections() {
         height: collectionImage5.height,
         alt: 'Explore new arrivals',
       },
-      color: 'bg-indigo-50',
+      color: 'bg-violet-50',
       count: 114,
     },
     {
@@ -760,7 +760,7 @@ export async function getCollections() {
         height: collectionImage6.height,
         alt: 'Explore new arrivals',
       },
-      color: 'bg-indigo-50',
+      color: 'bg-pink-50',
       count: 55,
     },
     {
@@ -775,7 +775,7 @@ export async function getCollections() {
         height: collectionImage7.height,
         alt: 'Explore new arrivals',
       },
-      color: 'bg-indigo-50',
+      color: 'bg-teal-50',
       count: 55,
     },
 

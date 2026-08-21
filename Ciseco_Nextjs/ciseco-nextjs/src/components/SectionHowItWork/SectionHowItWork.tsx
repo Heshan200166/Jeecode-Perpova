@@ -47,6 +47,10 @@ const DEMO_DATA = [
 const SectionHowItWork: FC<SectionHowItWorkProps> = ({ className = '', data = DEMO_DATA }) => {
   return (
     <div className={`nc-SectionHowItWork ${className}`}>
+      <div className="mb-16 text-center">
+        <h2 className="text-3xl font-semibold md:text-4xl">How it works</h2>
+        <p className="mt-4 text-neutral-500 dark:text-neutral-400">Shopping made simple in just 4 easy steps</p>
+      </div>
       <div className="relative grid gap-10 sm:grid-cols-2 sm:gap-16 lg:grid-cols-4 xl:gap-20">
         <Image className="absolute inset-x-0 top-5 hidden md:block" src={VectorImg} alt="vector" />
         {data.map((item, index) => (

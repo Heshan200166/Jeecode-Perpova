@@ -16,10 +16,10 @@ const SectionPromo1: FC<SectionPromo1Props> = ({ className = '' }) => {
       <div className="relative mb-16 shrink-0 lg:mr-10 lg:mb-0 lg:w-2/5">
         <Logo className="w-28" />
         <h2 className="mt-6 text-3xl leading-[1.2]! font-semibold tracking-tight sm:mt-10 sm:text-4xl xl:text-5xl 2xl:text-6xl">
-          Earn free money <br /> with Jee code.
+          Free shipping &amp; <br />20% off your first order.
         </h2>
         <span className="mt-6 block text-neutral-500 dark:text-neutral-400">
-          With Jee code you will get freeship & savings combo.
+          Join Jee code today and enjoy free shipping on all orders plus an exclusive welcome discount.
         </span>
         <div className="mt-6 flex flex-wrap gap-2 sm:mt-12 sm:gap-x-5">
           <ButtonPrimary href="/collection">Savings combo</ButtonPrimary>

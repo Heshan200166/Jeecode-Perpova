@@ -16,14 +16,14 @@ const PostCard1: FC<Props> = ({ className = 'h-full', post, size = 'md' }) => {
 
   return (
     <div className={clsx(className, 'flex flex-col', size === 'sm' && 'gap-y-6', size === 'md' && 'gap-y-10')}>
-      <Link href={'/blog/' + handle} title={title} className="relative block aspect-4/3 overflow-hidden rounded-3xl">
+      <Link href={'/blog/' + handle} title={title} className="relative block aspect-4/3 overflow-hidden rounded-3xl group/blogimg">
         {image?.src && (
           <Image
             src={image}
             alt={title || ''}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover brightness-100 transition-[filter] hover:brightness-90"
+            className="object-cover brightness-100 transition-all duration-500 group-hover/blogimg:scale-105 group-hover/blogimg:brightness-90"
           />
         )}
       </Link>

@@ -31,8 +31,8 @@ const CollectionCard4: FC<CollectionCard4Props> = ({ className, bgSvgUrl, collec
       <div className="flex flex-col justify-between">
         <div className="flex items-center justify-between gap-x-2.5">
           {collection.image?.src && (
-            <div className={clsx('relative size-20 overflow-hidden rounded-full', collection.color)}>
-              <div className="absolute inset-4">
+            <div className={clsx('relative size-24 overflow-hidden rounded-full', collection.color)}>
+              <div className="absolute inset-2">
                 <Image alt={collection.image?.alt} src={collection.image} fill sizes="80px" className="object-cover" />
               </div>
             </div>
