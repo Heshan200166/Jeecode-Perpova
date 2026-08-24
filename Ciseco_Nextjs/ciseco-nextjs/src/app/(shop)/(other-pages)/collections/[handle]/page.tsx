@@ -11,9 +11,23 @@ import {
   PaginationPrevious,
 } from '@/shared/Pagination/Pagination'
 
-export default async function Page({ params }: { params: Promise<{ handle: string }> }) {
+export default async function Page({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ handle: string }>
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
   const { handle } = await params
+  const sParams = await searchParams
+  const page = Number(sParams?.page) || 1
+  const pageSize = 8
+
   const products = await getProducts()
+  const totalPages = Math.ceil(products.length / pageSize)
+  const startIndex = (page - 1) * pageSize
+  const endIndex = startIndex + pageSize
+  const paginatedProducts = products.slice(startIndex, endIndex)
 
   return (
     <main>
@@ -27,24 +41,25 @@ export default async function Page({ params }: { params: Promise<{ handle: strin
 
       {/* LOOP ITEMS */}
       <div className="mt-8 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 xl:grid-cols-4">
-        {products?.map((produc) => <ProductCard data={produc} key={produc.id} />)}
+        {paginatedProducts?.map((produc) => <ProductCard data={produc} key={produc.id} />)}
       </div>
 
       {/* PAGINATION */}
-      <div className="mt-20 flex justify-center lg:mt-24">
-        <Pagination className="mx-auto">
-          <PaginationPrevious href="?page=1" />
-          <PaginationList>
-            <PaginationPage href="?page=1" current>
-              1
-            </PaginationPage>
-            <PaginationPage href="?page=2">2</PaginationPage>
-            <PaginationPage href="?page=3">3</PaginationPage>
-            <PaginationPage href="?page=4">4</PaginationPage>
-          </PaginationList>
-          <PaginationNext href="?page=3" />
-        </Pagination>
-      </div>
+      {totalPages > 1 && (
+        <div className="mt-20 flex justify-center lg:mt-24">
+          <Pagination className="mx-auto">
+            {page > 1 && <PaginationPrevious href={`?page=${page - 1}`} />}
+            <PaginationList>
+              {Array.from({ length: totalPages }).map((_, i) => (
+                <PaginationPage key={i + 1} href={`?page=${i + 1}`} current={page === i + 1}>
+                  {i + 1}
+                </PaginationPage>
+              ))}
+            </PaginationList>
+            {page < totalPages && <PaginationNext href={`?page=${page + 1}`} />}
+          </Pagination>
+        </div>
+      )}
     </main>
   )
 }

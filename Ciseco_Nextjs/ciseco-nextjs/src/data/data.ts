@@ -41,6 +41,14 @@ import productImage8_1 from '@/images/products/p8-1.jpg'
 import productImage8_2 from '@/images/products/p8-2.jpg'
 import productImage8_3 from '@/images/products/p8-3.jpg'
 import productImage8 from '@/images/products/p8.jpg'
+import productImage9 from '@/images/products/p9.jpg'
+import productImage10 from '@/images/products/p10.jpg'
+import productImage11 from '@/images/products/p11.jpg'
+import productImage12 from '@/images/products/p12.jpg'
+import productImage13 from '@/images/products/p13.jpg'
+import productImage14 from '@/images/products/p14.jpg'
+import productImage15 from '@/images/products/p15.jpg'
+import productImage16 from '@/images/products/p16.jpg'
 import avatarImage1 from '@/images/users/avatar1.jpg'
 import avatarImage2 from '@/images/users/avatar2.jpg'
 import avatarImage3 from '@/images/users/avatar3.jpg'
@@ -1852,6 +1860,222 @@ export async function getProducts() {
           value: 'M',
         },
       ],
+    },
+    {
+      id: 'gid://1009',
+      title: 'Placeholder Product 9',
+      handle: 'placeholder-product-9',
+      createdAt: '2025-05-14T09:00:00-04:00',
+      vendor: 'PlaceholderVendor',
+      price: 99,
+      featuredImage: {
+        src: productImage9.src,
+        width: productImage9.width,
+        height: productImage9.height,
+        alt: 'Placeholder Product 9',
+      },
+      images: [
+        {
+          src: productImage9.src,
+          width: productImage9.width,
+          height: productImage9.height,
+          alt: 'Placeholder Product 9',
+        },
+      ],
+      reviewNumber: 0,
+      rating: 5.0,
+      status: 'New in',
+      options: [],
+      selectedOptions: [],
+    },
+    {
+      id: 'gid://1010',
+      title: 'Placeholder Product 10',
+      handle: 'placeholder-product-10',
+      createdAt: '2025-05-14T09:00:00-04:00',
+      vendor: 'PlaceholderVendor',
+      price: 99,
+      featuredImage: {
+        src: productImage10.src,
+        width: productImage10.width,
+        height: productImage10.height,
+        alt: 'Placeholder Product 10',
+      },
+      images: [
+        {
+          src: productImage10.src,
+          width: productImage10.width,
+          height: productImage10.height,
+          alt: 'Placeholder Product 10',
+        },
+      ],
+      reviewNumber: 0,
+      rating: 5.0,
+      status: 'New in',
+      options: [],
+      selectedOptions: [],
+    },
+    {
+      id: 'gid://1011',
+      title: 'Placeholder Product 11',
+      handle: 'placeholder-product-11',
+      createdAt: '2025-05-14T09:00:00-04:00',
+      vendor: 'PlaceholderVendor',
+      price: 99,
+      featuredImage: {
+        src: productImage11.src,
+        width: productImage11.width,
+        height: productImage11.height,
+        alt: 'Placeholder Product 11',
+      },
+      images: [
+        {
+          src: productImage11.src,
+          width: productImage11.width,
+          height: productImage11.height,
+          alt: 'Placeholder Product 11',
+        },
+      ],
+      reviewNumber: 0,
+      rating: 5.0,
+      status: 'New in',
+      options: [],
+      selectedOptions: [],
+    },
+    {
+      id: 'gid://1012',
+      title: 'Placeholder Product 12',
+      handle: 'placeholder-product-12',
+      createdAt: '2025-05-14T09:00:00-04:00',
+      vendor: 'PlaceholderVendor',
+      price: 99,
+      featuredImage: {
+        src: productImage12.src,
+        width: productImage12.width,
+        height: productImage12.height,
+        alt: 'Placeholder Product 12',
+      },
+      images: [
+        {
+          src: productImage12.src,
+          width: productImage12.width,
+          height: productImage12.height,
+          alt: 'Placeholder Product 12',
+        },
+      ],
+      reviewNumber: 0,
+      rating: 5.0,
+      status: 'New in',
+      options: [],
+      selectedOptions: [],
+    },
+    {
+      id: 'gid://1013',
+      title: 'Placeholder Product 13',
+      handle: 'placeholder-product-13',
+      createdAt: '2025-05-14T09:00:00-04:00',
+      vendor: 'PlaceholderVendor',
+      price: 99,
+      featuredImage: {
+        src: productImage13.src,
+        width: productImage13.width,
+        height: productImage13.height,
+        alt: 'Placeholder Product 13',
+      },
+      images: [
+        {
+          src: productImage13.src,
+          width: productImage13.width,
+          height: productImage13.height,
+          alt: 'Placeholder Product 13',
+        },
+      ],
+      reviewNumber: 0,
+      rating: 5.0,
+      status: 'New in',
+      options: [],
+      selectedOptions: [],
+    },
+    {
+      id: 'gid://1014',
+      title: 'Placeholder Product 14',
+      handle: 'placeholder-product-14',
+      createdAt: '2025-05-14T09:00:00-04:00',
+      vendor: 'PlaceholderVendor',
+      price: 99,
+      featuredImage: {
+        src: productImage14.src,
+        width: productImage14.width,
+        height: productImage14.height,
+        alt: 'Placeholder Product 14',
+      },
+      images: [
+        {
+          src: productImage14.src,
+          width: productImage14.width,
+          height: productImage14.height,
+          alt: 'Placeholder Product 14',
+        },
+      ],
+      reviewNumber: 0,
+      rating: 5.0,
+      status: 'New in',
+      options: [],
+      selectedOptions: [],
+    },
+    {
+      id: 'gid://1015',
+      title: 'Placeholder Product 15',
+      handle: 'placeholder-product-15',
+      createdAt: '2025-05-14T09:00:00-04:00',
+      vendor: 'PlaceholderVendor',
+      price: 99,
+      featuredImage: {
+        src: productImage15.src,
+        width: productImage15.width,
+        height: productImage15.height,
+        alt: 'Placeholder Product 15',
+      },
+      images: [
+        {
+          src: productImage15.src,
+          width: productImage15.width,
+          height: productImage15.height,
+          alt: 'Placeholder Product 15',
+        },
+      ],
+      reviewNumber: 0,
+      rating: 5.0,
+      status: 'New in',
+      options: [],
+      selectedOptions: [],
+    },
+    {
+      id: 'gid://1016',
+      title: 'Placeholder Product 16',
+      handle: 'placeholder-product-16',
+      createdAt: '2025-05-14T09:00:00-04:00',
+      vendor: 'PlaceholderVendor',
+      price: 99,
+      featuredImage: {
+        src: productImage16.src,
+        width: productImage16.width,
+        height: productImage16.height,
+        alt: 'Placeholder Product 16',
+      },
+      images: [
+        {
+          src: productImage16.src,
+          width: productImage16.width,
+          height: productImage16.height,
+          alt: 'Placeholder Product 16',
+        },
+      ],
+      reviewNumber: 0,
+      rating: 5.0,
+      status: 'New in',
+      options: [],
+      selectedOptions: [],
     },
   ]
 }
