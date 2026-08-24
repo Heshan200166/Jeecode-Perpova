@@ -59,7 +59,7 @@ const SectionClientSay: FC<SectionClientSayProps> = ({
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useCarouselDotButton(emblaApi)
 
   return (
-    <div className={clsx('relative flow-root', className)}>
+    <div className={clsx('relative flow-root overflow-hidden', className)}>
       <Heading
         description={subHeading}
         isCenter

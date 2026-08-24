@@ -260,7 +260,7 @@ const SectionHero2: FC<Props> = ({ className = '' }) => {
                   <Image
                     sizes="(max-width: 768px) 95vw, 55vw"
                     className="hero-image-reveal relative z-10 h-auto w-full object-contain object-bottom select-none
-                      max-h-[55vh] sm:max-h-[60vh] lg:max-h-[calc(100vh-7rem)] lg:max-w-none"
+                      max-h-[55vh] sm:max-h-[60vh] md:max-h-[65vh] lg:max-h-[calc(100vh-7rem)] lg:max-w-none"
                     src={item.imageUrl}
                     alt={item.heading}
                     width={item.imageWidth || 790}

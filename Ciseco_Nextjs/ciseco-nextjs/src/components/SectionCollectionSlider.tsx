@@ -30,7 +30,7 @@ const SectionCollectionSlider = ({
   return (
     <div className={className}>
       <Heading
-        className="container mb-12 text-neutral-900 lg:mb-14 dark:text-neutral-50"
+        className="mb-12 text-neutral-900 lg:mb-14 dark:text-neutral-50"
         headingDim={headingDim}
         hasNextPrev
         prevBtnDisabled={prevBtnDisabled}
@@ -41,7 +41,7 @@ const SectionCollectionSlider = ({
         {heading}
       </Heading>
 
-      <div className="embla pl-container" ref={emblaRef}>
+      <div className="embla" ref={emblaRef}>
         <div className="-ms-5 embla__container">
           {collections.map((collection) => (
             <div

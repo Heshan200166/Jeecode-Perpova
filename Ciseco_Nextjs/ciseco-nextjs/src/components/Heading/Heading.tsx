@@ -31,8 +31,8 @@ const Heading: React.FC<HeadingProps> = ({
   ...args
 }) => {
   return (
-    <div className={clsx('relative flex flex-col justify-between sm:flex-row sm:items-end', className)}>
-      <div className={clsx(isCenter && 'mx-auto flex w-full flex-col items-center text-center')}>
+    <div className={clsx('relative flex flex-col justify-between gap-4 sm:flex-row sm:items-end', className)}>
+      <div className={clsx('min-w-0', isCenter && 'mx-auto flex w-full flex-col items-center text-center')}>
         <Level className={clsx(isCenter && 'justify-center', fontClass)} {...args}>
           {children}
           {headingDim ? (

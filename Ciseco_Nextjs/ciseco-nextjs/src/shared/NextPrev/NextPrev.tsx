@@ -18,8 +18,8 @@ export interface NextPrevProps {
 
 const NextPrev: FC<NextPrevProps> = ({
   className = '',
-  onClickNext = () => {},
-  onClickPrev = () => {},
+  onClickNext = () => { },
+  onClickPrev = () => { },
   btnClassName = 'w-10 h-10',
   onlyNext = false,
   onlyPrev = false,
@@ -32,11 +32,9 @@ const NextPrev: FC<NextPrevProps> = ({
     <div className={`nc-NextPrev relative flex items-center text-neutral-500 dark:text-neutral-400 ${className}`}>
       {!onlyNext && (
         <button
-          className={`${btnClassName} ${
-            !onlyPrev ? 'me-2' : ''
-          } flex items-center justify-center rounded-full border-neutral-200 dark:border-neutral-600 ${
-            focus === 'left' ? 'border-2' : ''
-          }`}
+          className={`${btnClassName} ${!onlyPrev ? 'me-2' : ''
+            } flex items-center justify-center rounded-full border-neutral-200 dark:border-neutral-600 ${focus === 'left' ? 'border-2' : ''
+            } disabled:opacity-40 disabled:cursor-not-allowed transition-opacity`}
           onClick={(e) => {
             e.preventDefault()
             onClickPrev()
@@ -51,9 +49,8 @@ const NextPrev: FC<NextPrevProps> = ({
       )}
       {!onlyPrev && (
         <button
-          className={`${btnClassName} flex items-center justify-center rounded-full border-neutral-200 dark:border-neutral-600 ${
-            focus === 'right' ? 'border-2' : ''
-          }`}
+          className={`${btnClassName} flex items-center justify-center rounded-full border-neutral-200 dark:border-neutral-600 ${focus === 'right' ? 'border-2' : ''
+            } disabled:opacity-40 disabled:cursor-not-allowed transition-opacity`}
           onClick={(e) => {
             e.preventDefault()
             onClickNext()
